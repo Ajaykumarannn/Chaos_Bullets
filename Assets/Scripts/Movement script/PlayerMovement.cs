@@ -1,27 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public void Movement(InputAction.CallbackContext context)
+    Vector2 movementValues = Vector2.zero;
+    public float FrameDistance = 5f;
+    
+    public void IAAccelerate(InputAction.CallbackContext context)
     {
-        Vector2 moveValues = context.ReadValue<Vector2>();
-
-        transform.Translate(moveValues.x,0, moveValues.y);
+        movementValues = context.ReadValue<Vector2>();
     }
 
-    
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+      transform.Translate(movementValues.x * FrameDistance *Time.deltaTime, 0, movementValues.y * FrameDistance*Time.deltaTime);
+      
+    
     }
+
+    
 }
