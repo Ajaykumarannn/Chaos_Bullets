@@ -7,10 +7,10 @@ using UnityEngine;
 public class LearningDemo : MonoBehaviour
 
 {
-    bool testBoolean = false;
-    int testInteger = -3;
+    //bool testBoolean = false;
+    //int testInteger = -3;
     float testFloat = 0.5f;
-    string testString = "Oomb";
+    //string testString = "Oomb";
 
     // Start is called before the first frame update
     void Start()
