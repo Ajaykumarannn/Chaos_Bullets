@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class EnemyBase : MonoBehaviour
 {
-
+    private float distancetoPlayer;
     public float enemySpeed;
     public float enemyCurrentHealth;
     public float enemyDamage;
     public float enemySize;
-    public Transform enemyTarget;
-    public float rotationSpeed;
+    public Transform targetPlayer;
+    public float rotationSpeed = 1f;
 
     void Start()
     {
@@ -20,10 +20,13 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      //1.
-      //transform.LookAt(enemyTarget);
-       
-        Vector3 direction = enemyTarget.position - transform.position;
+        //1.
+        //transform.LookAt(enemyTarget);
+
+        distancetoPlayer = Vector3.Distance(transform.position, targetPlayer.position);
+
+        transform.position = transform.position + (transform.forward * enemySpeed * Time.deltaTime);
+        Vector3 direction = targetPlayer.position - transform.position;
 
         Quaternion targetRotation = Quaternion.LookRotation(direction);
 
