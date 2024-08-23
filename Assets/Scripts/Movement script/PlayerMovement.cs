@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 lookingValues = Vector2.zero;
     public float MovementSpeed = 100f;
     public float TurnSpeed = 0.1f;
+    public GameObject bulletprefab;    
+
 
     
     public void IAAccelerate(InputAction.CallbackContext context)
@@ -23,15 +25,22 @@ public class PlayerMovement : MonoBehaviour
 
         transform.Rotate(transform.up, lookingValues.x * Time.deltaTime* TurnSpeed);
 
-
     }
 
-    void Start()
+    public void IAShoot(InputAction.CallbackContext context)
     {
-        
+        Shoot();
+        Debug.Log("shoot");
     }
 
-    
+    public void Shoot()
+
+    {
+        Instantiate(bulletprefab, transform.position + transform.forward, Quaternion.Euler(transform.forward));
+    }
+      
+
+
     void Update()
     {
       transform.Translate(movementValues.x * MovementSpeed *Time.deltaTime, 0, movementValues.y * MovementSpeed*Time.deltaTime);

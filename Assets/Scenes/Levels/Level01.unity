@@ -633,18 +633,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionId
       value: d779b6a4-8b9d-4be3-a90d-142e0bafe46f
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 8eae150e-f44d-4e74-9982-26aeb569d7f5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionName
       value: PlayerGroundMovement/Looking[/Mouse/delta]
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: PlayerGroundMovement/Shooting[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
@@ -652,7 +664,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1622637149}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1622637149}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
@@ -660,17 +680,37 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IALooking
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IAShoot
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 2099529896311189097, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2730128050503663729, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 4957830602207995572, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: m_Name
       value: Player
@@ -715,6 +755,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7810733363451053208, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fdf52bf58786b5e44988bdf977bacef8, type: 2}
     - target: {fileID: 9192954545905452482, guid: ceaaee73a0bcd4446a778bca87667376, type: 3}
       propertyPath: TurnSpeed
       value: 15.52
