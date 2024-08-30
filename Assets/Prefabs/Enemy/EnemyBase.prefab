@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 10276687605590330}
   - component: {fileID: 8778115331043303113}
   - component: {fileID: 4335567191833137893}
+  - component: {fileID: 8900693788782271248}
   m_Layer: 0
   m_Name: EnemyBase
   m_TagString: Untagged
@@ -124,3 +125,17 @@ MonoBehaviour:
   enemySize: 1
   targetPlayer: {fileID: 0}
   rotationSpeed: 50
+--- !u!114 &8900693788782271248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1115049127183086163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e70ba97d1e8a7b40a0b3f905365452e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  damage: 10
