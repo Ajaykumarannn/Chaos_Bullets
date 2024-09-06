@@ -18,7 +18,7 @@
                     "name": "Looking",
                     "type": "Value",
                     "id": "d779b6a4-8b9d-4be3-a90d-142e0bafe46f",
-                    "expectedControlType": "Delta",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -92,7 +92,7 @@
                 {
                     "name": "",
                     "id": "06811e6e-2861-467a-9bc4-828aed148b41",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

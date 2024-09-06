@@ -4,8 +4,18 @@ using UnityEngine;
 
 public class HealthandDamage : MonoBehaviour
 {
+    public float MaxHealth = 100f;
     public float Health = 100f;
     public float damage = 10f;
+
+    delegate void DamageTakenDelegate(float incomingDamage);
+
+    DamageTakenDelegate delegate_DamageTaken;
+
+    private void Start()
+    {
+        delegate_DamageTaken = AcceptDamage;
+    }
 
     public void AcceptDamage(float incomingDamage)
     {
@@ -13,12 +23,19 @@ public class HealthandDamage : MonoBehaviour
 
         if (Health < 0)
         {
-            death();
+            Death();
         }
     }
 
-    public void death()
+    public void Death()
     {
         Destroy(gameObject);
     }
+
+    public float GetHealthRatio()
+    {
+        return Health/MaxHealth;
+    }
+
+    
 }

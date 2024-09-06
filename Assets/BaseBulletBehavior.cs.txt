@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 // Defines a class for basic bullet behavior, inheriting from MonoBehaviour
-public class BaseBulletScripts : MonoBehaviour
+public class BaseBulletBehavior : MonoBehaviour
 {
     // Public variable for bullet speed, editable in the Unity Inspector
     public float bulletSpeed = 1;
@@ -53,7 +52,7 @@ public class BaseBulletScripts : MonoBehaviour
             Debug.Log("RayHitDetected");
 
             // Attempts to get the HealthAndDamage component from the hit object
-            HealthandDamage hitComponentHealth = rayHit.transform.gameObject.GetComponent<HealthandDamage>();
+            HealthAndDamage hitComponentHealth = rayHit.transform.gameObject.GetComponent<HealthAndDamage>();
 
             // Checks if the hit object has a HealthAndDamage component (presumably an enemy)
             if (hitComponentHealth != null)
