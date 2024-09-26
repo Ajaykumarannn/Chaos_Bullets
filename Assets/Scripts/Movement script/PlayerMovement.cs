@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float frameDistance = 100f;
 
     private HealthandDamage hdComponent;
+    public float XP;
 
     public Vector3 hitLocation;
 
